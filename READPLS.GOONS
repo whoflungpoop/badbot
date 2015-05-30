@@ -1,0 +1,31 @@
+##BADBOT - A BAD FORK
+##version blah 
+##whoflungpoop
+
+GETTING STARTED
+
+1) Install python libs (see REQUIREMENTS.TXT)
+	pip install -U pip (to update pip), then
+	pip install <LIBNAME>
+
+2) Modify config file
+	- rename configSAMPLE to config
+	- add local irc nick
+	- add location to comic path (where the generated comics will be stored)
+	- fill in other values (ie API keys) as needed
+	
+3) Obtain API keys for .g, .gis, .yt
+	- create project at https://console.developers.google.com/
+	- enable 2 APIs:
+		Custom Search API
+		Youtube Data API v3
+	- generate CLIENT key for PUBLIC API (not OAuth), add to google api key in config
+		
+4) Obtain other API keys as needed from each service website
+
+
+
+
+		
+	
+	
