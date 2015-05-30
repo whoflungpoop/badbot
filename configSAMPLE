@@ -1,41 +1,48 @@
 {
-  "connections":
-  {
-    "local irc":
-    {
+  "connections": {
+    "local irc": {
       "server": "irc.synirc.com",
-      "nick": "",
-	  "nickserv_password":"",
-	  "user":"",
-	  "realname":"badbot, a bad bot",
-      "channels": ["#gbs"]
+      "nick": "CHANGEME",
+      "nickserv_password": "",
+      "user": "badbot",
+      "realname": "badbot, a bad bot",
+      "channels": [
+        "#trashcan",
+        "#gbs"
+      ]
     }
   },
   "prefix": ".",
   "disabled_plugins": [],
   "disabled_commands": [],
   "acls": {},
-  "comic_path":"",
-  "crowdcontrol": [ {"re":"dindus?", "kick":"1", "ban_length":"0", "msg":"dindont do that"}
+  "comic_path": "",
+  "crowdcontrol": [
+    {
+      "re": "dindus?",
+      "kick": "1",
+      "ban_length": "0",
+      "msg": "dindont do that"
+    }
   ],
   "api_keys": {
-	"giphy":"",
-	"wunderground":"",
-	"google":"",
-	"imgur":"",
-	"somethingawful": {"user":"", "password":""},
-	"twitter":
-    {"consumer": "", 
-     "consumer_secret": "",
-	"access":"",
-	"access_secret":""  
-     },
-	"wolframalpha":""
-
+    "giphy": "",
+    "wunderground": "",
+    "google": "",
+    "imgur": "",
+    "somethingawful": {
+      "user": "",
+      "password": ""
+    },
+    "twitter": {
+      "consumer": "",
+      "consumer_secret": "",
+      "access": "",
+      "access_secret": ""
+    },
+    "wolframalpha": ""
   },
-  "censored_strings":
-  [
-    "DCC SEND",
+  "censored_strings": [
     "\\0",
     "\\x01",
     "!coz",
