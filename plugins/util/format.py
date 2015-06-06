@@ -27,7 +27,7 @@ BLUE = "12"
 PINK = "13"
 DARK_GRAY = "14"
 LIGHT_GRAY = "15"
-WHITE = "16"
+WHITE = "0"
 
 # Filter modes
 FILTER_ALL = 1
@@ -108,7 +108,9 @@ def color(text, foreground, background=None):
         +---------------------------+------------------------+
     """
     # TODO: Make sure format.color() is correct
-    color = COLOR_TAG + foreground
+    color = unicode(COLOR_TAG + foreground)
     if background is not None:
+		if background == "16":
+			background = "0"
         color += ",%s" % background
-    return color + text + (COLOR_TAG * 3)
+    return unicode( color + text + (COLOR_TAG) ) 
