@@ -67,8 +67,8 @@ def quote(inp, nick='', chan='', db=None, admin=False):
             return "message already stored, doing nothing."
         return "quote added."
     if delete:
-        if not admin:
-            return 'only admins can delete quotes'
+#        if not admin:
+#            return 'only admins can delete quotes'
         quoted_nick, msg = delete.groups()
         if del_quote(db, chan, quoted_nick, msg):
             return "deleted quote '%s'" % msg
